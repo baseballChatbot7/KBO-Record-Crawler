@@ -6,25 +6,25 @@ import Team.Team_Defense
 import Team.Team_Runner
 
 if not os.path.isfile('./Data/Team_Hitter.csv'):
-    print('팀기록 타자 데이터를 수집하고 있습니다.')
+    print('팀 기록 타자 데이터를 수집하고 있습니다.')
     TH = Team.Team_Hitter.Team_Hitter()
 else:
     TH = pd.read_csv('./Data/Team_Hitter.csv', encoding='EUC-KR')
 
 if not os.path.isfile('./Data/Team_Pitcher.csv'):
-    print('팀기록 투수 데이터를 수집하고 있습니다.')
+    print('팀 기록 투수 데이터를 수집하고 있습니다.')
     TP = Team.Team_Pitcher.Team_Pitcher()
 else:
     TP = pd.read_csv('./Data/Team_Pitcher.csv', encoding='EUC-KR')
 
 if not os.path.isfile('./Data/Team_Defense.csv'):
-    print('팀기록 수비 데이터를 수집하고 있습니다.')
+    print('팀 기록 수비 데이터를 수집하고 있습니다.')
     TD = Team.Team_Defense.Team_Defense()
 else:
     TD = pd.read_csv('./Data/Team_Defense.csv', encoding='EUC-KR')
 
 if not os.path.isfile('./Data/Team_Runner.csv'):
-    print('팀기록 주자 데이터를 수집하고 있습니다.')
+    print('팀 기록 주자 데이터를 수집하고 있습니다.')
     TR = Team.Team_Runner.Team_Runner()
 else:
     TR = pd.read_csv('./Data/Team_Runner.csv', encoding='EUC-KR')
